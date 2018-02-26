@@ -1,0 +1,5 @@
+1) Iris Dataset
+https://archive.ics.uci.edu/ml/datasets/iris
+
+2) Pima Indians Diabetes Data Set  
+https://archive.ics.uci.edu/ml/datasets/pima+indians+diabetes
