@@ -49,10 +49,10 @@ print(train_y.shape)
 # 1. define the network
 model = Sequential()
 model.add(Dense(12, input_dim=4, activation='relu'))   #Input features = 4 , hidden1 = 12
-model.add(Dense(3, activation='sigmoid'))              #output class = 3  
+model.add(Dense(3, activation='softmax'))              #output class = 3  
 
 # 2. compile the network
-model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 # 3. fit the network
 history = model.fit(train_x, train_y, epochs=1000, batch_size=10)
